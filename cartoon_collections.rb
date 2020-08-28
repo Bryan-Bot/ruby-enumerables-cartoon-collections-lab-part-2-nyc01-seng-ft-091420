@@ -3,7 +3,7 @@ def square_array(array)
   # Return a new array of the results
   sqr = []
   array.each do |i|
-    sqr<<(i*i)
+    sqr.push(i*i)
   end
   sqr
 end
