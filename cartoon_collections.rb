@@ -25,8 +25,6 @@ def long_planeteer_calls(planeteer_calls)
     planeteer_calls.all? do |i|
       if i.length > 4
         stat = true
-      else
-        stat = false
       end
     end
 end
