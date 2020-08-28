@@ -31,12 +31,12 @@ def find_valid_calls(planeteer_calls)
   valid_calls = ["Earth!", "Wind!", "Fire!", "Water!", "Heart!"]
   # Use an Enumerable to check if any elements in the passed in array match the valid calls listed above
   # Return the first valid call found, or return nil if no valid calls are found
-  empty = ""
-  valid_calls.select do |i|
+  planeteer_calls.select do |i|
+    valid_calls.select do |b|
     if i == planeteer_calls
-      empty = "#{i}"
+      i = b
     else
-      empty = "nil"
+      nil
     end
   end
 end
