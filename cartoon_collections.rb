@@ -5,6 +5,7 @@ def square_array(array)
   array.each do |i|
     sgr.push(i*i)
   end
+  return sqr
 end
 
 def summon_captain_planet(planeteer_calls)
